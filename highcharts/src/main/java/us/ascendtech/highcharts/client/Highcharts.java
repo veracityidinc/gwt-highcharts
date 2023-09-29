@@ -41,6 +41,10 @@ public class Highcharts {
 
 	public native static Highcharts mapChart(String elementId, ChartOptions chartOptions);
 
+	public native static Highcharts stockChart(String elementId, ChartOptions chartOptions);
+
+	public native static Highcharts ganttChart(String elementId, ChartOptions chartOptions);
+
 	public native static SVGRenderer Renderer(Element container, Double width, Double height);
 
 	public native static void addAnnotation(Annotations annotations);

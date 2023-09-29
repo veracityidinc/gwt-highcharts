@@ -9,15 +9,15 @@ Add AST Maven Repo
   allprojects {
     repositories {
       ...
-      maven { url 'https://maven.ascend-tech.us/repo' }
+      maven { url 'https://repo.veracityid.com/repository/maven-releases/' }
     }
   }
 ```
 
 Add Dependency:
 ```gradle
-  compile 'us.ascendtech:highcharts:1.2.3'
-  compile 'us.ascendtech:highcharts:1.2.3:sources'
+  compile 'us.ascendtech:highcharts:1.2.4'
+  compile 'us.ascendtech:highcharts:1.2.4:sources'
 ```
 
 ### Gradle Kotlin
@@ -28,7 +28,7 @@ Add AST Maven Repo
     repositories {
         ...
         maven {
-            url = uri("https://maven.ascend-tech.us/repo")
+            url = uri("https://repo.veracityid.com/repository/maven-releases/")
         }
     }
   }
@@ -37,8 +37,8 @@ Add AST Maven Repo
 Add Dependency:
 
 ```gradle
-  compile("us.ascendtech:highcharts:1.2.3")
-  compile("us.ascendtech:highcharts:1.2.3:sources")
+  compile("us.ascendtech:highcharts:1.2.4")
+  compile("us.ascendtech:highcharts:1.2.4:sources")
 ```
 
 ### Maven
@@ -57,12 +57,12 @@ Add Dependency
   <dependency>
     <groupId>us.ascendtech</groupId>
     <artifactId>highcharts</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4</version>
 </dependency>
   <dependency>
     <groupId>us.ascendtech</groupId>
     <artifactId>highcharts</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4</version>
     <classifier>sources</classifier>
   </dependency>
 ```

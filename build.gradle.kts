@@ -1,16 +1,7 @@
-import org.ajoberstar.reckon.gradle.ReckonExtension
-
 plugins {
     java
-    idea
-    signing
+    `java-library`
     `maven-publish`
-    id("org.ajoberstar.reckon") version "0.13.0"
-}
-
-configure<ReckonExtension> {
-    scopeFromProp()
-    stageFromProp("rc", "final")
 }
 
 defaultTasks("build")
@@ -18,8 +9,7 @@ defaultTasks("build")
 subprojects {
 
     apply(plugin = "java")
-    apply(plugin = "idea")
-    apply(plugin = "signing")
+    apply(plugin = "java-library")
     apply(plugin = "maven-publish")
 
     java {
@@ -47,7 +37,7 @@ subprojects {
                 from(components["java"])
                 artifact(tasks["sourcesJar"])
                 pom {
-                    url.set("https://ascend-tech.us")
+                    url.set("https://github.com/veracityidinc/gwt-highcharts")
                     licenses {
                         license {
                             name.set("The Apache License, Version 2.0")
@@ -71,9 +61,9 @@ subprojects {
                         }
                     }
                     scm {
-                        connection.set("git@github.com:ascendtech/gwt-highcharts.git")
-                        developerConnection.set("git@github.com:ascendtech/gwt-highcharts.git")
-                        url.set("https://github.com/ascendtech/gwt-highcharts.git")
+                        connection.set("git@github.com:veracityidinc/gwt-highcharts.git")
+                        developerConnection.set("git@github.com:veracityidinc/gwt-highcharts.git")
+                        url.set("https://github.com/veracityidinc/gwt-highcharts.git")
                     }
                     name.set(project.name)
                     description.set(project.name)
@@ -84,6 +74,7 @@ subprojects {
 
     defaultTasks("build")
     group = "us.ascendtech"
+    version = "1.2.4"
 
     repositories {
         mavenCentral()

@@ -40,7 +40,7 @@ public class Chart {
 	@JsProperty
 	private ChartEvents events;
 	@JsProperty
-	private double height;
+	private Object height;
 	@JsProperty
 	private Object map;
 	@JsProperty
@@ -120,7 +120,7 @@ public class Chart {
 	@JsProperty
 	private String typeDescription;
 	@JsProperty
-	private double width;
+	private Object width;
 	@JsProperty
 	private String zoomType;
 
@@ -180,12 +180,12 @@ public class Chart {
 	}
 
 	@JsOverlay
-	public final double getBorderWidth() {
+	public final Object getBorderWidth() {
 		return borderWidth;
 	}
 
 	@JsOverlay
-	public final Chart setBorderWidth(double borderWidth) {
+	public final Chart setBorderWidth(Object borderWidth) {
 		this.borderWidth = borderWidth;
 		return this;
 	}
@@ -257,12 +257,12 @@ public class Chart {
 	}
 
 	@JsOverlay
-	public final double getHeight() {
+	public final Object getHeight() {
 		return height;
 	}
 
 	@JsOverlay
-	public final Chart setHeight(double height) {
+	public final Chart setHeight(Object height) {
 		this.height = height;
 		return this;
 	}

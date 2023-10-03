@@ -135,8 +135,9 @@ chartDiv.addAttachHandler(event -> {
 
 ```
 
-### Publish to Sonatype (temporary as the github action does NOT auto publish yet)
+
+#### Publish to Sonatype (temp FIX 'till publish workflow goes through)
 1. Increment `version` in `build.gradle.kts` 
-2. Run `gradle clean build publishToMavenLocal`
-3. Goto .m2/repository/us/ascendtech/highcharts
-4. Fetch the generated resources (jar. sources and pom) and upload them on sonatype/releases
+2. Run `gradle clean build publishToMavenLocal` or `./gradlew clean build publishToMavenLocal`
+3. Goto `.m2/repository/us/ascendtech/highcharts`
+4. Fetch the generated resources (`.jar` `.sources` `.pom`) and upload them on sonatype/releases

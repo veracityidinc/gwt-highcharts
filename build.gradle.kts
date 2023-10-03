@@ -59,6 +59,13 @@ subprojects {
                             organization.set("Ascendant Software Technology, LLC")
                             organizationUrl.set("https://www.ascend-tech.us")
                         }
+                        developer {
+                            id.set("bp")
+                            name.set("Bogdan Petridean")
+                            email.set("bpetridean@veracityid.com")
+                            organization.set("VeracityId")
+                            organizationUrl.set("https://veracityid.com/")
+                        }
                     }
                     scm {
                         connection.set("git@github.com:veracityidinc/gwt-highcharts.git")

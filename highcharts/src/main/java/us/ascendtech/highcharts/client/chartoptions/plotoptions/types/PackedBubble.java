@@ -16,6 +16,7 @@ import us.ascendtech.highcharts.client.chartoptions.shared.Shadow;
 import us.ascendtech.highcharts.client.chartoptions.shared.functions.Animation;
 import us.ascendtech.highcharts.client.chartoptions.shared.functions.PointDescriptionFormatter;
 import us.ascendtech.highcharts.client.chartoptions.tooltip.Tooltip;
+import us.ascendtech.highcharts.client.chartoptions.layoutalgorithm.LayoutAlgorithm;
 
 /**
  * @author Samuel Palacean

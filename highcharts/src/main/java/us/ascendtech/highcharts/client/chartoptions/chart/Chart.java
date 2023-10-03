@@ -180,12 +180,12 @@ public class Chart {
 	}
 
 	@JsOverlay
-	public final Object getBorderWidth() {
+	public final double getBorderWidth() {
 		return borderWidth;
 	}
 
 	@JsOverlay
-	public final Chart setBorderWidth(Object borderWidth) {
+	public final Chart setBorderWidth(double borderWidth) {
 		this.borderWidth = borderWidth;
 		return this;
 	}
@@ -697,12 +697,12 @@ public class Chart {
 	}
 
 	@JsOverlay
-	public final double getWidth() {
+	public final Object getWidth() {
 		return width;
 	}
 
 	@JsOverlay
-	public final Chart setWidth(double width) {
+	public final Chart setWidth(Object width) {
 		this.width = width;
 		return this;
 	}

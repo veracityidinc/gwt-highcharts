@@ -39,7 +39,6 @@ public class Chart {
 	private String description;
 	@JsProperty
 	private ChartEvents events;
-	@JsProperty
 	private Object height;
 	@JsProperty
 	private Object map;
@@ -119,7 +118,6 @@ public class Chart {
 	private String type;
 	@JsProperty
 	private String typeDescription;
-	@JsProperty
 	private Object width;
 	@JsProperty
 	private String zoomType;
@@ -256,10 +254,8 @@ public class Chart {
 		return this;
 	}
 
-	@JsOverlay
-	public final Object getHeight() {
-		return height;
-	}
+	@JsProperty
+	public native Object getHeight();
 
 	@JsOverlay
 	public final Chart setHeight(Object height) {
@@ -696,10 +692,8 @@ public class Chart {
 		return this;
 	}
 
-	@JsOverlay
-	public final Object getWidth() {
-		return width;
-	}
+	@JsProperty
+	public native Object getWidth();
 
 	@JsOverlay
 	public final Chart setWidth(Object width) {

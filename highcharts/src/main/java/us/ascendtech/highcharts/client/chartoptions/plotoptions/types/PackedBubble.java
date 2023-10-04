@@ -24,125 +24,66 @@ import us.ascendtech.highcharts.client.chartoptions.layoutalgorithm.LayoutAlgori
  */
 @JsType(isNative = true, name = "Object", namespace = JsPackage.GLOBAL)
 public class PackedBubble {
-	@JsProperty
 	private Boolean allowPointSelect;
-	@JsProperty
 	private Animation animation;
-	@JsProperty
 	private double animationLimit;
-	@JsProperty
 	private double boostThreshold;
-	@JsProperty
 	private String className;
-	@JsProperty
 	private String color;
-	@JsProperty
 	private double colorIndex;
-	@JsProperty
 	private Boolean connectEnds;
-	@JsProperty
 	private Boolean connectNulls;
-	@JsProperty
 	private double cropThreshold;
-	@JsProperty
 	private String cursor;
-	@JsProperty
 	private String dashStyle;
-	@JsProperty
 	private SeriesDataLabels dataLabels;
-	@JsProperty
 	private String description;
-	@JsProperty
 	private Boolean displayNegative;
-	@JsProperty
 	private Boolean enableMouseTracking;
-	@JsProperty
 	private SeriesEvents events;
-	@JsProperty
 	private Boolean exposeElementToA11y;
-	@JsProperty
 	private String findNearestPointBy;
-	@JsProperty
 	private Boolean getExtremesFromAll;
-	@JsProperty
 	private JsArray<String> keys;
-	@JsProperty
 	private SeriesLabel label;
-	@JsProperty
 	private String linecap;
-	@JsProperty
 	private double lineWidth;
-	@JsProperty
 	private String linkedTo;
-	@JsProperty
 	private SeriesMarker marker;
-	@JsProperty
 	private String maxSize;
-	@JsProperty
 	private String minSize;
-	@JsProperty
 	private String negativeColor;
-	@JsProperty
 	private SeriesPoint point;
-	@JsProperty
 	private PointDescriptionFormatter pointDescriptionFormatter;
-	@JsProperty
 	private double pointInterval;
-	@JsProperty
 	private String pointIntervalUnit;
-	@JsProperty
 	private double pointStart;
-	@JsProperty
 	private Boolean selected;
-	@JsProperty
 	private Shadow shadow;
-	@JsProperty
 	private Boolean showCheckbox;
-	@JsProperty
 	private Boolean showInLegend;
-	@JsProperty
 	private String sizeBy;
-	@JsProperty
 	private Boolean sizyByAbsoluteValue;
-	@JsProperty
 	private Boolean skipKeyboardNavigation;
-	@JsProperty
 	private Boolean softThreshold;
-	@JsProperty
 	private String stacking;
-	@JsProperty
 	private SeriesStates states;
-	@JsProperty
 	private String step;
-	@JsProperty
 	private Boolean stickyTracking;
-	@JsProperty
 	private double threshold;
-	@JsProperty
 	private Tooltip tooltip;
-	@JsProperty
 	private Boolean trackByArea;
-	@JsProperty
 	private double turboThreshold;
-	@JsProperty
 	private Boolean visible;
-	@JsProperty
 	private double zMax;
-	@JsProperty
 	private double zMin;
-	@JsProperty
 	private String zoneAxis;
-	@JsProperty
 	private JsArray<SeriesZones> zones;
-	@JsProperty
 	private double zThreshold;
-	@JsProperty
 	private LayoutAlgorithm layoutAlgorithm;
 
-	@JsOverlay
-	public final Boolean getAllowPointSelect() {
-		return allowPointSelect;
-	}
+	@JsProperty
+	public native Boolean getAllowPointSelect();
 
 	@JsOverlay
 	public final PackedBubble setAllowPointSelect(Boolean allowPointSelect) {
@@ -150,10 +91,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Animation getAnimation() {
-		return animation;
-	}
+	@JsProperty
+	public native Animation getAnimation();
 
 	@JsOverlay
 	public final PackedBubble setAnimation(Animation animation) {
@@ -161,10 +100,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getAnimationLimit() {
-		return animationLimit;
-	}
+	@JsProperty
+	public native double getAnimationLimit();
 
 	@JsOverlay
 	public final PackedBubble setAnimationLimit(double animationLimit) {
@@ -172,10 +109,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getBoostThreshold() {
-		return boostThreshold;
-	}
+	@JsProperty
+	public native double getBoostThreshold();
 
 	@JsOverlay
 	public final PackedBubble setBoostThreshold(double boostThreshold) {
@@ -183,10 +118,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getClassName() {
-		return className;
-	}
+	@JsProperty
+	public native String getClassName();
 
 	@JsOverlay
 	public final PackedBubble setClassName(String className) {
@@ -194,10 +127,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getColor() {
-		return color;
-	}
+	@JsProperty
+	public native String getColor();
 
 	@JsOverlay
 	public final PackedBubble setColor(String color) {
@@ -205,10 +136,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getColorIndex() {
-		return colorIndex;
-	}
+	@JsProperty
+	public native double getColorIndex();
 
 	@JsOverlay
 	public final PackedBubble setColorIndex(double colorIndex) {
@@ -216,10 +145,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getConnectEnds() {
-		return connectEnds;
-	}
+	@JsProperty
+	public native Boolean getConnectEnds();
 
 	@JsOverlay
 	public final PackedBubble setConnectEnds(Boolean connectEnds) {
@@ -227,10 +154,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getConnectNulls() {
-		return connectNulls;
-	}
+	@JsProperty
+	public native Boolean getConnectNulls();
 
 	@JsOverlay
 	public final PackedBubble setConnectNulls(Boolean connectNulls) {
@@ -238,10 +163,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getCropThreshold() {
-		return cropThreshold;
-	}
+	@JsProperty
+	public native double getCropThreshold();
 
 	@JsOverlay
 	public final PackedBubble setCropThreshold(double cropThreshold) {
@@ -249,10 +172,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getCursor() {
-		return cursor;
-	}
+	@JsProperty
+	public native String getCursor();
 
 	@JsOverlay
 	public final PackedBubble setCursor(String cursor) {
@@ -260,10 +181,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getDashStyle() {
-		return dashStyle;
-	}
+	@JsProperty
+	public native String getDashStyle();
 
 	@JsOverlay
 	public final PackedBubble setDashStyle(String dashStyle) {
@@ -271,10 +190,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final SeriesDataLabels getDataLabels() {
-		return dataLabels;
-	}
+	@JsProperty
+	public native SeriesDataLabels getDataLabels();
 
 	@JsOverlay
 	public final PackedBubble setDataLabels(SeriesDataLabels dataLabels) {
@@ -282,10 +199,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getDescription() {
-		return description;
-	}
+	@JsProperty
+	public native String getDescription();
 
 	@JsOverlay
 	public final PackedBubble setDescription(String description) {
@@ -293,10 +208,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getDisplayNegative() {
-		return displayNegative;
-	}
+	@JsProperty
+	public native Boolean getDisplayNegative();
 
 	@JsOverlay
 	public final PackedBubble setDisplayNegative(Boolean displayNegative) {
@@ -304,10 +217,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getEnableMouseTracking() {
-		return enableMouseTracking;
-	}
+	@JsProperty
+	public native Boolean getEnableMouseTracking();
 
 	@JsOverlay
 	public final PackedBubble setEnableMouseTracking(Boolean enableMouseTracking) {
@@ -315,10 +226,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final SeriesEvents getEvents() {
-		return events;
-	}
+	@JsProperty
+	public native SeriesEvents getEvents();
 
 	@JsOverlay
 	public final PackedBubble setEvents(SeriesEvents events) {
@@ -326,10 +235,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getExposeElementToA11y() {
-		return exposeElementToA11y;
-	}
+	@JsProperty
+	public native Boolean getExposeElementToA11y();
 
 	@JsOverlay
 	public final PackedBubble setExposeElementToA11y(Boolean exposeElementToA11y) {
@@ -337,10 +244,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getFindNearestPointBy() {
-		return findNearestPointBy;
-	}
+	@JsProperty
+	public native String getFindNearestPointBy();
 
 	@JsOverlay
 	public final PackedBubble setFindNearestPointBy(String findNearestPointBy) {
@@ -348,10 +253,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getGetExtremesFromAll() {
-		return getExtremesFromAll;
-	}
+	@JsProperty
+	public native Boolean getGetExtremesFromAll();
 
 	@JsOverlay
 	public final PackedBubble setGetExtremesFromAll(Boolean getExtremesFromAll) {
@@ -359,10 +262,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final JsArray<String> getKeys() {
-		return keys;
-	}
+	@JsProperty
+	public native JsArray<String> getKeys();
 
 	@JsOverlay
 	public final PackedBubble setKeys(JsArray<String> keys) {
@@ -370,10 +271,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final SeriesLabel getLabel() {
-		return label;
-	}
+	@JsProperty
+	public native SeriesLabel getLabel();
 
 	@JsOverlay
 	public final PackedBubble setLabel(SeriesLabel label) {
@@ -381,10 +280,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getLinecap() {
-		return linecap;
-	}
+	@JsProperty
+	public native String getLinecap();
 
 	@JsOverlay
 	public final PackedBubble setLinecap(String linecap) {
@@ -392,10 +289,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getLineWidth() {
-		return lineWidth;
-	}
+	@JsProperty
+	public native double getLineWidth();
 
 	@JsOverlay
 	public final PackedBubble setLineWidth(double lineWidth) {
@@ -403,10 +298,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getLinkedTo() {
-		return linkedTo;
-	}
+	@JsProperty
+	public native String getLinkedTo();
 
 	@JsOverlay
 	public final PackedBubble setLinkedTo(String linkedTo) {
@@ -414,10 +307,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final SeriesMarker getMarker() {
-		return marker;
-	}
+	@JsProperty
+	public native SeriesMarker getMarker();
 
 	@JsOverlay
 	public final PackedBubble setMarker(SeriesMarker marker) {
@@ -425,10 +316,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getMaxSize() {
-		return maxSize;
-	}
+	@JsProperty
+	public native String getMaxSize();
 
 	@JsOverlay
 	public final PackedBubble setMaxSize(String maxSize) {
@@ -436,10 +325,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getMinSize() {
-		return minSize;
-	}
+	@JsProperty
+	public native String getMinSize();
 
 	@JsOverlay
 	public final PackedBubble setMinSize(String minSize) {
@@ -447,10 +334,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getNegativeColor() {
-		return negativeColor;
-	}
+	@JsProperty
+	public native String getNegativeColor();
 
 	@JsOverlay
 	public final PackedBubble setNegativeColor(String negativeColor) {
@@ -458,10 +343,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final SeriesPoint getPoint() {
-		return point;
-	}
+	@JsProperty
+	public native SeriesPoint getPoint();
 
 	@JsOverlay
 	public final PackedBubble setPoint(SeriesPoint point) {
@@ -469,10 +352,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final PointDescriptionFormatter getPointDescriptionFormatter() {
-		return pointDescriptionFormatter;
-	}
+	@JsProperty
+	public native PointDescriptionFormatter getPointDescriptionFormatter();
 
 	@JsOverlay
 	public final PackedBubble setPointDescriptionFormatter(PointDescriptionFormatter pointDescriptionFormatter) {
@@ -480,10 +361,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getPointInterval() {
-		return pointInterval;
-	}
+	@JsProperty
+	public native double getPointInterval();
 
 	@JsOverlay
 	public final PackedBubble setPointInterval(double pointInterval) {
@@ -491,10 +370,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getPointIntervalUnit() {
-		return pointIntervalUnit;
-	}
+	@JsProperty
+	public native String getPointIntervalUnit();
 
 	@JsOverlay
 	public final PackedBubble setPointIntervalUnit(String pointIntervalUnit) {
@@ -502,10 +379,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getPointStart() {
-		return pointStart;
-	}
+	@JsProperty
+	public native double getPointStart();
 
 	@JsOverlay
 	public final PackedBubble setPointStart(double pointStart) {
@@ -513,10 +388,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getSelected() {
-		return selected;
-	}
+	@JsProperty
+	public native Boolean getSelected();
 
 	@JsOverlay
 	public final PackedBubble setSelected(Boolean selected) {
@@ -524,10 +397,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Shadow getShadow() {
-		return shadow;
-	}
+	@JsProperty
+	public native Shadow getShadow();
 
 	@JsOverlay
 	public final PackedBubble setShadow(Shadow shadow) {
@@ -535,10 +406,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getShowCheckbox() {
-		return showCheckbox;
-	}
+	@JsProperty
+	public native Boolean getShowCheckbox();
 
 	@JsOverlay
 	public final PackedBubble setShowCheckbox(Boolean showCheckbox) {
@@ -546,10 +415,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getShowInLegend() {
-		return showInLegend;
-	}
+	@JsProperty
+	public native Boolean getShowInLegend();
 
 	@JsOverlay
 	public final PackedBubble setShowInLegend(Boolean showInLegend) {
@@ -557,10 +424,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getSizeBy() {
-		return sizeBy;
-	}
+	@JsProperty
+	public native String getSizeBy();
 
 	@JsOverlay
 	public final PackedBubble setSizeBy(String sizeBy) {
@@ -568,10 +433,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getSizyByAbsoluteValue() {
-		return sizyByAbsoluteValue;
-	}
+	@JsProperty
+	public native Boolean getSizyByAbsoluteValue();
 
 	@JsOverlay
 	public final PackedBubble setSizyByAbsoluteValue(Boolean sizyByAbsoluteValue) {
@@ -579,10 +442,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getSkipKeyboardNavigation() {
-		return skipKeyboardNavigation;
-	}
+	@JsProperty
+	public native Boolean getSkipKeyboardNavigation();
 
 	@JsOverlay
 	public final PackedBubble setSkipKeyboardNavigation(Boolean skipKeyboardNavigation) {
@@ -590,10 +451,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getSoftThreshold() {
-		return softThreshold;
-	}
+	@JsProperty
+	public native Boolean getSoftThreshold();
 
 	@JsOverlay
 	public final PackedBubble setSoftThreshold(Boolean softThreshold) {
@@ -601,10 +460,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getStacking() {
-		return stacking;
-	}
+	@JsProperty
+	public native String getStacking();
 
 	@JsOverlay
 	public final PackedBubble setStacking(String stacking) {
@@ -612,10 +469,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final SeriesStates getStates() {
-		return states;
-	}
+	@JsProperty
+	public native SeriesStates getStates();
 
 	@JsOverlay
 	public final PackedBubble setStates(SeriesStates states) {
@@ -623,10 +478,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getStep() {
-		return step;
-	}
+	@JsProperty
+	public native String getStep();
 
 	@JsOverlay
 	public final PackedBubble setStep(String step) {
@@ -634,10 +487,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getStickyTracking() {
-		return stickyTracking;
-	}
+	@JsProperty
+	public native Boolean getStickyTracking();
 
 	@JsOverlay
 	public final PackedBubble setStickyTracking(Boolean stickyTracking) {
@@ -645,10 +496,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getThreshold() {
-		return threshold;
-	}
+	@JsProperty
+	public native double getThreshold();
 
 	@JsOverlay
 	public final PackedBubble setThreshold(double threshold) {
@@ -656,10 +505,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Tooltip getTooltip() {
-		return tooltip;
-	}
+	@JsProperty
+	public native Tooltip getTooltip();
 
 	@JsOverlay
 	public final PackedBubble setTooltip(Tooltip tooltip) {
@@ -667,10 +514,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getTrackByArea() {
-		return trackByArea;
-	}
+	@JsProperty
+	public native Boolean getTrackByArea();
 
 	@JsOverlay
 	public final PackedBubble setTrackByArea(Boolean trackByArea) {
@@ -678,10 +523,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getTurboThreshold() {
-		return turboThreshold;
-	}
+	@JsProperty
+	public native double getTurboThreshold();
 
 	@JsOverlay
 	public final PackedBubble setTurboThreshold(double turboThreshold) {
@@ -689,10 +532,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final Boolean getVisible() {
-		return visible;
-	}
+	@JsProperty
+	public native Boolean getVisible();
 
 	@JsOverlay
 	public final PackedBubble setVisible(Boolean visible) {
@@ -700,10 +541,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getzMax() {
-		return zMax;
-	}
+	@JsProperty
+	public native double getzMax();
 
 	@JsOverlay
 	public final PackedBubble setzMax(double zMax) {
@@ -711,10 +550,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getzMin() {
-		return zMin;
-	}
+	@JsProperty
+	public native double getzMin();
 
 	@JsOverlay
 	public final PackedBubble setzMin(double zMin) {
@@ -722,10 +559,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final String getZoneAxis() {
-		return zoneAxis;
-	}
+	@JsProperty
+	public native String getZoneAxis();
 
 	@JsOverlay
 	public final PackedBubble setZoneAxis(String zoneAxis) {
@@ -733,10 +568,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final JsArray<SeriesZones> getZones() {
-		return zones;
-	}
+	@JsProperty
+	public native JsArray<SeriesZones> getZones();
 
 	@JsOverlay
 	public final PackedBubble setZones(JsArray<SeriesZones> zones) {
@@ -744,10 +577,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final double getzThreshold() {
-		return zThreshold;
-	}
+	@JsProperty
+	public native double getzThreshold();
 
 	@JsOverlay
 	public final PackedBubble setzThreshold(double zThreshold) {
@@ -755,10 +586,8 @@ public class PackedBubble {
 		return this;
 	}
 
-	@JsOverlay
-	public final LayoutAlgorithm getLayoutAlgorithm() {
-		return layoutAlgorithm;
-	}
+	@JsProperty
+	public native LayoutAlgorithm getLayoutAlgorithm();
 
 	@JsOverlay
 	public final PackedBubble setLayoutAlgorithm(LayoutAlgorithm layoutAlgorithm) {

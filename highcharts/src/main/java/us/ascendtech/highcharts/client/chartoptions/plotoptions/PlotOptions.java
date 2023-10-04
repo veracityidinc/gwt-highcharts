@@ -101,7 +101,6 @@ public class PlotOptions {
 	private WordCloud wordcloud;
 	@JsProperty
 	private XRange xrange;
-	@JsProperty
 	private PackedBubble packedbubble;
 
 	@JsOverlay
@@ -566,10 +565,8 @@ public class PlotOptions {
 		return this;
 	}
 
-	@JsOverlay
-	public final PackedBubble getPackedbubble() {
-		return packedbubble;
-	}
+	@JsProperty
+	public native PlotOptions getPackedbubble();
 
 	@JsOverlay
 	public final PlotOptions setPackedbubble(PackedBubble packedbubble) {

@@ -10,35 +10,21 @@ import jsinterop.annotations.JsType;
  */
 @JsType(isNative = true, name = "Object", namespace = JsPackage.GLOBAL)
 public class LayoutAlgorithm {
-    @JsProperty
     private double bubblePadding;
-    @JsProperty
     private Boolean dragBetweenSeries;
-    @JsProperty
     private Boolean enableSimulation;
-    @JsProperty
     private double friction;
-    @JsProperty
     private double gravitationalConstant;
-    @JsProperty
     private double initialPositionRadius;
-    @JsProperty
     private double linkLength;
-    @JsProperty
     private double maxIterations;
-    @JsProperty
     private double maxSpeed;
-    @JsProperty
     private Boolean parentNodeLimit;
-    @JsProperty
     private Boolean seriesInteraction;
-    @JsProperty
     private Boolean splitSeries;
 
-    @JsOverlay
-    public final double getBubblePadding() {
-        return bubblePadding;
-    }
+    @JsProperty
+    public native double getBubblePadding();
 
     @JsOverlay
     public final LayoutAlgorithm setBubblePadding(double bubblePadding) {
@@ -46,10 +32,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final Boolean getDragBetweenSeries() {
-        return dragBetweenSeries;
-    }
+    @JsProperty
+    public native Boolean getDragBetweenSeries();
 
     @JsOverlay
     public final LayoutAlgorithm setDragBetweenSeries(Boolean dragBetweenSeries) {
@@ -57,10 +41,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final Boolean getEnableSimulation() {
-        return enableSimulation;
-    }
+    @JsProperty
+    public native Boolean getEnableSimulation();
 
     @JsOverlay
     public final LayoutAlgorithm setEnableSimulation(Boolean enableSimulation) {
@@ -68,10 +50,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final double getFriction() {
-        return friction;
-    }
+    @JsProperty
+    public native double getFriction();
 
     @JsOverlay
     public final LayoutAlgorithm setFriction(double friction) {
@@ -79,10 +59,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final double getGravitationalConstant() {
-        return gravitationalConstant;
-    }
+    @JsProperty
+    public native double getGravitationalConstant();
 
     @JsOverlay
     public final LayoutAlgorithm setGravitationalConstant(double gravitationalConstant) {
@@ -90,10 +68,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final double getInitialPositionRadius() {
-        return initialPositionRadius;
-    }
+    @JsProperty
+    public native double getInitialPositionRadius();
 
     @JsOverlay
     public final LayoutAlgorithm setInitialPositionRadius(double initialPositionRadius) {
@@ -101,10 +77,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final double getLinkLength() {
-        return linkLength;
-    }
+    @JsProperty
+    public native double getLinkLength();
 
     @JsOverlay
     public final LayoutAlgorithm setLinkLength(double linkLength) {
@@ -118,15 +92,11 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final double getMaxIterations() {
-        return maxIterations;
-    }
+    @JsProperty
+    public native double getMaxIterations();
 
-    @JsOverlay
-    public final double getMaxSpeed() {
-        return maxSpeed;
-    }
+    @JsProperty
+    public native double getMaxSpeed();
 
     @JsOverlay
     public final LayoutAlgorithm setMaxSpeed(double maxSpeed) {
@@ -134,10 +104,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final Boolean getParentNodeLimit() {
-        return parentNodeLimit;
-    }
+    @JsProperty
+    public native Boolean getParentNodeLimit();
 
     @JsOverlay
     public final LayoutAlgorithm setParentNodeLimit(Boolean parentNodeLimit) {
@@ -145,10 +113,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final Boolean getSeriesInteraction() {
-        return seriesInteraction;
-    }
+    @JsProperty
+    public native Boolean getSeriesInteraction();
 
     @JsOverlay
     public final LayoutAlgorithm setSeriesInteraction(Boolean seriesInteraction) {
@@ -156,10 +122,8 @@ public class LayoutAlgorithm {
         return this;
     }
 
-    @JsOverlay
-    public final Boolean getSplitSeries() {
-        return splitSeries;
-    }
+    @JsProperty
+    public native Boolean getSplitSeries();
 
     @JsOverlay
     public final LayoutAlgorithm setSplitSeries(Boolean splitSeries) {

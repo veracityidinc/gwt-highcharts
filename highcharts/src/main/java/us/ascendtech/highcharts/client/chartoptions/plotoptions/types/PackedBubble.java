@@ -542,7 +542,7 @@ public class PackedBubble {
 	}
 
 	@JsProperty
-	public native double getzMax();
+	public native double getZMax();
 
 	@JsOverlay
 	public final PackedBubble setzMax(double zMax) {
@@ -551,7 +551,7 @@ public class PackedBubble {
 	}
 
 	@JsProperty
-	public native double getzMin();
+	public native double getZMin();
 
 	@JsOverlay
 	public final PackedBubble setzMin(double zMin) {
@@ -578,7 +578,7 @@ public class PackedBubble {
 	}
 
 	@JsProperty
-	public native double getzThreshold();
+	public native double getZThreshold();
 
 	@JsOverlay
 	public final PackedBubble setzThreshold(double zThreshold) {

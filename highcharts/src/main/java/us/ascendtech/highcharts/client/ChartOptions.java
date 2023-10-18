@@ -32,6 +32,7 @@ import us.ascendtech.highcharts.client.chartoptions.plotoptions.PlotOptions;
 import us.ascendtech.highcharts.client.chartoptions.responsive.Responsive;
 import us.ascendtech.highcharts.client.chartoptions.series.Series;
 import us.ascendtech.highcharts.client.chartoptions.tooltip.Tooltip;
+import us.ascendtech.highcharts.client.chartoptions.rangeselector.RangeSelector;
 
 /**
  * @author Payam Meyer
@@ -98,6 +99,8 @@ public class ChartOptions {
 	private YAxis yAxis;
 	@JsProperty
 	private ZAxis zAxis;
+	@JsProperty
+	private RangeSelector rangeSelector;
 
 	@JsOverlay
 	public final Accessibility getAccessibility() {
@@ -415,6 +418,17 @@ public class ChartOptions {
 	@JsOverlay
 	public final ChartOptions setzAxis(ZAxis zAxis) {
 		this.zAxis = zAxis;
+		return this;
+	}
+
+	@JsOverlay
+	public final RangeSelector getRangeSelector() {
+		return rangeSelector;
+	}
+
+	@JsOverlay
+	public final ChartOptions setRangeSelector(RangeSelector rangeSelector) {
+		this.rangeSelector = rangeSelector;
 		return this;
 	}
 }

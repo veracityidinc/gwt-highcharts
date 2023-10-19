@@ -421,10 +421,8 @@ public class ChartOptions {
 		return this;
 	}
 
-	@JsOverlay
-	public final RangeSelector getRangeSelector() {
-		return rangeSelector;
-	}
+	@JsProperty
+	public native RangeSelector getRangeSelector();
 
 	@JsOverlay
 	public final ChartOptions setRangeSelector(RangeSelector rangeSelector) {

@@ -55,6 +55,10 @@ public class SeriesData {
 	private double x;
 	@JsProperty
 	private double y;
+	@JsProperty
+	private double x2;
+	@JsProperty
+	private double partialFill;
 
 	@JsOverlay
 	public final String getBorderColor() {
@@ -306,6 +310,28 @@ public class SeriesData {
 	@JsOverlay
 	public final SeriesData setY(double y) {
 		this.y = y;
+		return this;
+	}
+
+	@JsOverlay
+	public final double getX2() {
+		return x2;
+	}
+
+	@JsOverlay
+	public final SeriesData setX2(double x2) {
+		this.x2 = x2;
+		return this;
+	}
+
+	@JsOverlay
+	public final double getPartialFill() {
+		return x2;
+	}
+
+	@JsOverlay
+	public final SeriesData setPartialFill(double partialFill) {
+		this.partialFill = partialFill;
 		return this;
 	}
 }

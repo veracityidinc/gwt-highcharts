@@ -29,6 +29,32 @@ public class AxisPlotBand {
 	private double to;
 	@JsProperty
 	private double zIndex;
+	@JsProperty
+	private double thickness;
+    @JsProperty
+    private String borderRadius;
+
+	@JsOverlay
+	public final String getBorderRadius() {
+		return borderRadius;
+	}
+
+	@JsOverlay
+	public final AxisPlotBand setBorderRadius(String borderRadius) {
+		this.borderRadius = borderRadius;
+		return this;
+	}
+
+	@JsOverlay
+	public final double getThickness() {
+		return thickness;
+	}
+
+	@JsOverlay
+	public final AxisPlotBand setThickness(double thickness) {
+		this.thickness = thickness;
+		return this;
+	}
 
 	@JsOverlay
 	public final String getBorderColor() {

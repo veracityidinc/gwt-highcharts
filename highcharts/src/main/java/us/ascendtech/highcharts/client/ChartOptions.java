@@ -11,6 +11,7 @@ import us.ascendtech.highcharts.client.chartoptions.Time;
 import us.ascendtech.highcharts.client.chartoptions.Title;
 import us.ascendtech.highcharts.client.chartoptions.accessibility.Accessibility;
 import us.ascendtech.highcharts.client.chartoptions.annotations.Annotations;
+import us.ascendtech.highcharts.client.chartoptions.axis.Axis;
 import us.ascendtech.highcharts.client.chartoptions.axis.XAxis;
 import us.ascendtech.highcharts.client.chartoptions.axis.YAxis;
 import us.ascendtech.highcharts.client.chartoptions.axis.ZAxis;
@@ -96,7 +97,7 @@ public class ChartOptions {
 	@JsProperty
 	private XAxis xAxis;
 	@JsProperty
-	private YAxis yAxis;
+	JsArray<Axis> yAxis;
 	@JsProperty
 	private ZAxis zAxis;
 	@JsProperty
@@ -400,12 +401,12 @@ public class ChartOptions {
 	}
 
 	@JsOverlay
-	public final YAxis getyAxis() {
+	public final JsArray<Axis> getyAxis() {
 		return yAxis;
 	}
 
 	@JsOverlay
-	public final ChartOptions setyAxis(YAxis yAxis) {
+	public final ChartOptions setyAxis(JsArray<Axis> yAxis) {
 		this.yAxis = yAxis;
 		return this;
 	}
